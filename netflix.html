@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://icones.pro/wp-content/uploads/2021/04/icone-netflix-symbole-logo-original.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<!--modal-->
+
+
+
+
+    <title>NETFLIX PAGE</title>
+  </head>
+  <body style="background-color: black;">
+
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style = "color: red; font-size: 27px;">NETFLIX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+            </ul>
+            <form class="d-flex">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" style="color:white" href="#">PRINCIPAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu.html" style="color:white">FILMES POPULARES</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link disabled" style="color:white">SÉRIES POPULARES</a>
+                    </li>
+                    <li class="nav-item">
+                    <form action="menu.html">
+                        <button type="submit" href = "menu.html" class="btn btn-danger" style = "background-color: red; ">VOLTAR MENU</button>
+                        </form>
+                      </li>
+                  </ul>
+       
+            </form>
+
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" styles="height" >
+    
+        <div class="carousel-inner" style = "height: 600px;">
+          <div class="carousel-item active">
+            <div class="card bg-dark text-white">
+              <img src="imgs/you.jpg" class="d-block w-100" alt="...">
+              <div class="card-img-overlay" >
+                <br>
+                        
+
+                <h6  style = "font-size: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"class="card-title">YOU</h6>
+                <p class="card-text">Obsessivo e mortalmente charmoso, Joe vai ao extremo para entrar na vida de quem o fascina. Por trás de seus modos gentis, há uma fúria assassina e um passado perturbador.</p>
+                <p class="card-text">2018 | 14 | 4 temporadas | Séries dos EUA</p>
+                <button type="button" class="btn btn-danger" style = "background-color: red; font-size: 15px;">ASSISTIR AGORA</button>
+              </div>
+            </div>
+         
+          </div>
+          <div class="carousel-item">
+            <div class="card bg-dark text-white">
+              <img src="imgs/a.jpg" class="d-block w-100" alt="...">
+              <div class="card-img-overlay" >
+                <br>
+                        
+
+                <h6  style = "font-size: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"class="card-title">COBRA KAI</h6>
+                <p class="card-text">Décadas depois da competição que mudou suas vidas, a rivalidade entre Johnny e Daniel está de volta nesta sequência da trilogia Karatê Kid.</p>
+                <p class="card-text">2018 | 14 | 4 temporadas | Séries dos EUA</p>
+                <button type="button" class="btn btn-danger" style = "background-color: red; font-size: 15px;">ASSISTIR AGORA</button>
+              </div>
+            </div>
+         
+          </div>
+          <div class="carousel-item">
+            <div class="card bg-dark text-white">
+              <img src="imgs/papel.jpg" class="d-block w-100" alt="...">
+              <div class="card-img-overlay" >
+                <br>
+                        
+
+                <h6  style = "font-size: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"class="card-title">LA CASA DE PAPEL</h6>
+                <p class="card-text">Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar um plano que pode ser o maior roubo da história ou uma missão em vão.</p>
+                <p class="card-text">2018 | 18 | 4 temporadas | Séries dos EUA</p>
+                <button type="button" class="btn btn-danger" style = "background-color: red; font-size: 15px;">ASSISTIR AGORA</button>
+              </div>
+          </div>
+          </div></div></div>
+
+
+          <!---Multiitems (em teste ainda)-->
+
+          <style media="screen">
+            .carousel-cell {
+              width: 150px;
+              margin-right: 15px;
+              height: 200px;
+              }
+          
+              /* cell number */
+              .carousel-cell:before {
+                display: block;
+              }
+            </style>
+
+
+<div>
+  <br>
+<h5 class=" col-11 m-auto" style="color: white;" >FILMES POPULARES</h5>
+<br>
+<div class="carousel col-11 m-auto" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+  <div class="carousel-cell ">
+    <img class="w3-image" src="https://m.media-amazon.com/images/M/MV5BNTgzZjM5MWQtN2NhMy00NTFiLTliNGUtYTFiZjY3MWYwYmZjXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_.jpg" data-bs-toggle="modal" data-bs-target="#capa01">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://seuladogeek.com.br/wp-content/uploads/2022/03/O-Projeto-Adam-filme-Netflix-768x1075.jpg" data-bs-toggle="modal" data-bs-target="#capa02">
+<p>sdauidhasuifh</p>
+  </div>
+  <div class="carousel-cell">
+   
+    <img class="w3-image" src="https://seuladogeek.com.br/wp-content/uploads/2022/04/The-In-Between.jpg" data-bs-toggle="modal" data-bs-target="#capa03">
+   
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://1.bp.blogspot.com/-ERGIM0M8Gbo/YQ06YXuDGAI/AAAAAAAAsmY/AneqCxfxXnsVkCFBO4F3Xbo5r1XSnyEhACLcBGAsYHQ/s900/A%2BJornada%2Bde%2BVivo%2Bnetflix%2Bposter.jpg" data-bs-toggle="modal" data-bs-target="#capa04">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxp1zGpRgnhx04mCdkDOlbu-FGTrgvK3SDNie8_ybDtKYb-sXo" data-bs-toggle="modal" data-bs-target="#capa05">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" link = "Facebook.com" src="https://ocaminhodoencontro.com.br/website/wp-content/uploads/2021/11/o-caminho-do-encontro-o-menino-que-descobriu-o-vento.jpg" data-bs-toggle="modal" data-bs-target="#capa06">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/pt/9/9f/Sonic_the_Hedgehog_2019.jpg" data-bs-toggle="modal" data-bs-target="#capa07">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://br.web.img3.acsta.net/pictures/19/10/08/15/52/1926679.jpg" data-bs-toggle="modal" data-bs-target="#capa08">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/pt/d/da/Minha_M%C3%A3e_%C3%A9_uma_Pe%C3%A7a.jpg" data-bs-toggle="modal" data-bs-target="#capa09">
+
+</div>
+</div>
+
+
+
+<div>
+  <br>
+<h5 class=" col-11 m-auto" style="color: white;" >SÉRIES POPULARES</h5>
+<br>
+<div class="carousel col-11 m-auto" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+  <div class="carousel-cell ">
+    <img class="w3-image" src="https://images-na.ssl-images-amazon.com/images/I/71Pfj+orjFL.jpg " data-bs-toggle="modal" data-bs-target="#capa11">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://br.web.img2.acsta.net/pictures/18/02/01/11/56/4746129.jpg" data-bs-toggle="modal" data-bs-target="#capa12">
+
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://br.web.img2.acsta.net/pictures/18/08/20/23/45/3126235.jpg" data-bs-toggle="modal" data-bs-target="#capa13">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://br.web.img3.acsta.net/pictures/20/11/04/11/32/4052345.jpg" data-bs-toggle="modal" data-bs-target="#capa14">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://br.web.img3.acsta.net/pictures/21/09/28/18/33/0121813.jpg" data-bs-toggle="modal" data-bs-target="#capa15">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src=" https://vigilianerd.com.br/wp-content/uploads/2020/09/vigilianerd-brooklyn99.jpg" data-bs-toggle="modal" data-bs-target="#capa16">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://br.web.img2.acsta.net/pictures/21/06/22/21/18/0131916.jpg" data-bs-toggle="modal" data-bs-target="#capa17">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="https://br.web.img3.acsta.net/pictures/21/04/06/15/12/2953711.jpg" data-bs-toggle="modal" data-bs-target="#capa18">
+
+</div>
+<div class="carousel-cell">
+  <img class="w3-image" src="data:image/jpeg;base64,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" data-bs-toggle="modal" data-bs-target="#capa19">
+
+</div>
+
+</div>
+
+
+<!-- Modal -->
+
+
+<div class="modal fade" id="capa01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">A perfect Pairing </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Ela ama sua vida, seu subchefe de longa data e melhor amigo, e a comida que ela compartilha com os moradores de sua amada cidade de Buffalo. Sua vida é exatamente como ela quer: sem amarras, sem compromissos e sem raízes - apenas um ótimo queijo grelhado e muita liberdade ao lado.</p>
+       <img src="https://variety.com/wp-content/uploads/2022/05/A_Perfect_Pairing_01_16_03_01A_R3.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="capa02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">O projeto Adam</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Um viajante do tempo volta ao ano de 2022 por acidente e acaba se encontrando com seu eu mais novo. Juntos, e sendo caçados por forças do futuro, os dois embarcam em uma missão para consertar a linha temporal e salvar seus entes queridos.</p>
+       <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZfBKxr5geoqhza48rMohYhf7Af1RjoR3NhYXNuSAmEmlbiUps6eueocRDnbuEc8r_ClE5MeRFZvdbegKXtcwMWohVL2uWqaDyRu.jpg?r=909" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">The in between</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Uma adolescente perde o amor da sua vida em um trágico acidente. Arrasada, a jovem começa a achar que o rapaz está se comunicando com ela do além.</p>
+       <img src="https://www.nerdsite.com.br/wp-content/uploads/2022/01/Andrew-Burnap-1-3.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">A jornada de vivo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Vivo é um jupará apaixonado por música que parte de Havana para Miami com uma importante missão: entregar uma canção de amor a pedido de um grande amigo.</p>
+       <img src="https://s2.glbimg.com/aqntB_2W8YErgRGrMovacerqnqo=/e.glbimg.com/og/ed/f/original/2021/08/06/vivo.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="capa05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Alerta vermelho</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Um alerta vermelho da Interpol é emitido e o agente do FBI John Hartley assume o caso. Durante sua busca, ele se vê diante de um assalto ousado e é forçado a se aliar ao maior ladrão de arte da história, Nolan Booth, para capturar a ladra de arte mais procurada do mundo atualmente, Sarah Black.</p>
+       <img src="https://img.olhardigital.com.br/wp-content/uploads/2021/09/Alerta-Vermelho.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">O menino que descobriu o vento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Sempre esforçando-se para adquirir conhecimentos diversificados, um jovem de Malawi se cansa de assistir todos os colegas de seu vilarejo passando por dificuldades e começa a desenvolver uma inovadora turbina de vento.</p>
+       <img src="https://www.blogs.unicamp.br/energiaeambiente/wp-content/uploads/sites/6/2019/05/menino-vento.png" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Sonic o filme</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Sonic, o porco-espinho azul mais famoso do mundo, se junta com os seus amigos para derrotar o terrível Doutor Eggman, um cientista louco que planeja dominar o mundo, e o Doutor Robotnik, responsável por aprisionar animais inocentes em robôs.</p>
+       <img src="https://veja.abril.com.br/wp-content/uploads/2020/02/filme-sonic-08.jpg.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Milagre na cela 7 </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Memo, um pastor de ovelhas com deficiência mental, vive com sua filha e avó em uma vila na costa turca do mar Egeu. Um dia, sua vida é virada de cabeça para baixo quando a filha do comandante morre e Memo é acusado do assassinato e condenado à morte</p>
+       <img src="https://institutodecinema.com.br/img/milagrenacela7.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Minha mãe é uma peça </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Dona Hermínia é uma mulher de meia idade, divorciada do marido, que a trocou por uma mais jovem. Hiperativa, ela não larga o pé de seus filhos Marcelina e Juliano, que já estão bem grandinhos. Um dia, após descobrir que eles a consideram uma chata, resolve sair de casa sem avisar ninguém, deixando todos, de alguma forma, preocupados com o que teria acontecido. Mal sabem eles que a mãe foi visitar a querida tia Zélia para desabafar suas tristezas do presente e recordar os bons tempos do passado.Dona Hermínia é uma mulher de meia idade, divorciada do marido, que a trocou por uma mais jovem. Hiperativa, ela não larga o pé de seus filhos Marcelina e Juliano, que já estão bem grandinhos. Um dia, após descobrir que eles a consideram uma chata, resolve sair de casa sem avisar ninguém, deixando todos, de alguma forma, preocupados com o que teria acontecido. Mal sabem eles que a mãe foi visitar a querida tia Zélia para desabafar suas tristezas do presente e recordar os bons tempos do passado.</p>
+       <img src="https://f.i.uol.com.br/fotografia/2019/12/03/15754171525de6f5402f7a2_1575417152_3x2_md.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal Series -->
+
+
+<div class="modal fade" id="capa11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Peaky Blinders  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Uma notória gangue da Inglaterra de 1919 é liderada pelo cruel Tommy Shelby, um criminoso disposto a subir na vida a qualquer preço.</p>
+       <img src="https://www.nerdtrip.com.br/wp-content/uploads/2020/05/Peaky-Blinders-2.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="capa12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">On my block</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Quatro adolescente contam com o poder da amizade para sobreviver ao ensino médio em um bairro marginalizado de Los Angeles.</p>
+       <img src="https://rollingstone.uol.com.br/media/_versions/temporada-4-on-my-block-divulgacao-netflix_widelg.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Atypical</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Sam, um adolescente com traços de autismo, resolve arrumar uma namorada. Sua busca por independência coloca toda sua família em uma aventura de autodescoberta.</p>
+       <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbRqrb-5ol31iKIq0qo_qWU0p-rycODwvs30X3JsQXQ2VEgeEQBz2hwsevTbEA0qEvnB9gePJMZ47rNPcHfQxHwvU1didG5lg5zI.jpg?r=0b6" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Bridgerton</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Oito irmãos inseparáveis buscam amor e felicidade na alta sociedade de Londres.</p>
+       <img src="https://woomagazine.com.br/wp-content/uploads/2022/03/AAAAQf3Io4rXuO2h_zb3O1V4Q8Q4h2ol54FxldOPKIM-v719mG5cbJ8a7UVzbVT3dpNoPyMSBuEwdC7jEHt6u3WJE2831zJ4udb3uXyYpJ5EubMkacQ4y2LUPl7sZMn_nHBVKX5XUPEiW3rZC9_c7uaD1LdMyo.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="capa15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Sintonia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Doni, Nando e Rita cresceram juntos na mesma favela, influenciados pelo fascínio do funk, do tráfico de drogas e da igreja. Cada um deles transforma suas experiências de infância em caminhos muito divergentes, até perceberem que precisam um do outro.</p>
+       <img src="https://rollingstone.uol.com.br/media/_versions/sintonia-serie-brasileira-netflix-2-temporada-foto-divulgacao_widelg.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Brooklyn Nine-Nine</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Jake Peralta é um detetive brilhante e ao mesmo tempo imaturo, que nunca precisou se preocupar em respeitar as regras. Tudo muda quando um capitão exigente assume o comando de seu esquadrão e Jake deve aprender a trabalhar em equipe.</p>
+       <img src="https://img.ibxk.com.br/2021/09/17/17162905245380.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Heartland</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Em meio a segredos, paixões e rivalidades, a família Heartland se mantém unida para enfrentar os desafios da vida e administrar sua fazenda.</p>
+       <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/06/heartland-elenco.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Zero</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Um adolescente tímido e que se sente excluído, descobre que tem a misteriosa habilidade de se tornar invisível. Assim, ele decide usar seus novos poderes para defender o bairro</p>
+       <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/04/zero-Netflix-1.jpg" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="capa19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: red; color:white">
+        <h5 style = "font-family: cursive;" class="modal-title" id="exampleModalLabel">Cidade dos Campeões</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div style="background-color: black;" class="modal-body">
+       <p style="color: white;"   >Em uma cidade da Geórgia que respira futebol americano, um time enfrenta obstáculos e luta pela vitória dentro e fora do campo.</p>
+       <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABS8jsfylLcLNwgGwv3A20uoRZvYZgWqw-sIdi5xcI7cgS_0jyEe0pxjlj79SjzrvYvSlYyv8XAUJ5zRleeUYexqYpJgwOtmX8Qf2wksU8xwOc-edlZ0V6Wf3.jpg?r=57d" class="d-block w-100" alt="...">
+    
+      </div>
+      <div class="modal-footer" style="background-color: black">
+        <button style="background-color: red;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sinopse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+ 
+  </body>
+</html>
